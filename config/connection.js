@@ -1,8 +1,15 @@
-const {connect, connection} = require("mongoose")
+const { mongoose, connect } = require("mongoose")
 
-connect('mongodb://localhost/introvertsDB', {
+connect('mongodb://127.0.0.1/introvertsDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
 
-module.exports = connection
+const db = mongoose.connection
+
+db.once('open', () => {
+  console.log('Database connected')
+})
+
+module.exports = db
+
