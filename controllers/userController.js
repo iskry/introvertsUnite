@@ -4,7 +4,7 @@ const { User, Thought } = require('../models');
 // Export functions that handle different user requests
 module.exports = {
   // Get all users
-  getUsers(res) {
+  getUsers(req, res) {
     User.find()
       .then((users) => res.json(users))
       .catch((err) => res.status(500).json(err));
@@ -41,7 +41,7 @@ module.exports = {
     )
       .then((user) =>
         !user
-          ? res.status(404).json({ message: 'No user with this id!' })
+          ? res.status(404).json({ message: 'No user with this ID!' })
           : res.json(user)
       )
       .catch((err) => res.status(500).json(err));

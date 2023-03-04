@@ -5,7 +5,7 @@ const apiRoutes = require('./api');
 router.use('/api', apiRoutes);
 
 // If invalid route is used, send 404 error message
-router.use((res) => res.status(404).send('Sorry, the requested resource cannot be found.'));
+router.use((req, res) => res.send('Sorry, the requested resource cannot be found.'));
 
 module.exports = router;
 
