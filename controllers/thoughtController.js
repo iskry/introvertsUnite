@@ -70,8 +70,8 @@ module.exports = {
           .then((user) =>
             // Return an error if no user is found with the provided id
             !user
-              ? res.status(404).json({
-                  message: 'Thought deleted, but no user found',
+              ? res.json({
+                  message: 'Thought deleted',
                 })
               : res.json({ message: 'Thought successfully deleted' })
           )
