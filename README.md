@@ -2,7 +2,7 @@
 
 ## Description
 Introverts Unite is a social media platform designed for introverted individuals to connect and share their thoughts and experiences. The application is built using Node.js, Express, MongoDB, and Mongoose. Users can create a profile, make posts, and interact with other users through comments and reactions. The platform focuses on providing a safe space for introverted individuals to socialize and connect with like-minded people. Throughout the development process, I gained experience building a full-stack application using modern web technologies such as Node.js and MongoDB.
-[Video Tutorial](https://youtu.be/k3e9ElvR4o8)
+[Video Tutorial](https://www.youtube.com/watch?v=gRtOWShOjdA)
 
 
 ## Table of Contents
